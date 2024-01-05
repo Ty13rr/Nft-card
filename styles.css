@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: var(--Very-dark-blue-main);
+}
+
+.container {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.card {
+  height: auto;
+  background-color: var(--Very-dark-blue-card);
+  box-shadow: 2px 2px 80px rgba(0, 0, 0, 0.3);
+  border-radius: 18px;
+  text-align: left;
+  margin: 0.1em;
+  padding-top: 20px;
+}
+
+.card .main {
+  display: flex;
+  margin: auto;
+  max-width: 90%;
+  width: 90%;
+  border-radius: 12px;
+}
+
+.text h1 {
+  color: var(--White);
+  padding: 30px 20px 25px;
+  font-size: 28px;
+}
+
+.text p {
+  color: var(--Soft-blue);
+  font-size: 18px;
+  padding: 0 20px;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+
+.text .eth {
+  color: var(--Cyan);
+}
+
+.text .eth,
+.eth-icon {
+  display: inline;
+}
+
+.text .time {
+  color: var(--Soft-blue);
+  padding-left: 5px;
+}
+
+.text .time,
+.time-icon {
+  display: inline;
+  position: relative;
+  left: 120px;
+}
+
+.text .eth-icon {
+  padding: 0 5px 0 20px;
+}
+
+.text h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text {
+  padding-bottom: 30px;
+}
+
+.text::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 30px;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.foot .avatar {
+  display: inline;
+  max-width: 40px;
+  padding-left: 20px;
+  position: relative;
+  bottom: 10px;
+}
+
+.foot p {
+  color: var(--Soft-blue);
+  position: relative;
+  left: 75px;
+  bottom: 46px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.foot span {
+  color: var(--White);
+}
+
+.text .eth,
+.time {
+  position: relative;
+  bottom: 2px;
+}
